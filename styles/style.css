@@ -144,9 +144,213 @@ hr{
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    padding-bottom: 130px;
+    padding-bottom: 50px;
 }
 .items{
     margin: 0 20px;
     color: #B9B9B9;
+}
+.social-links{
+    padding-bottom: 50px;
+}
+.links{
+    color: white;
+    font-size: 30px;
+    padding: 0 10px;
+}
+.view-all{
+    display: none;
+}
+
+/* mobile */
+@media screen and (max-width:688px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 24px;
+    }
+    .banner-details h1{
+        font-size: 22px;
+        margin-top: 28px;
+        margin-left: 50px;
+        width: 228px;
+    }
+    .banner-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+    .banner-texts{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+    .watch-live{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .banner .messi img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav-and-blog{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    .navigators{
+        background-color: white;
+        margin-right: 0;
+        margin-bottom: 24px;
+        padding: 0;
+    }
+    .nav{
+        border: 1px solid #161616;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+    }
+    footer{
+        width: 100%;
+    }
+    .goal {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 0;
+    }
+    .footer-items{
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .items{
+        padding-top: 20px;
+    }
+    .view-all{
+        display: none;
+    }
+    
+}
+/* tablet */
+@media screen and (min-width:689px) and (max-width:992px){
+    main {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 24px;
+    }
+    .banner-details h1{
+        font-size: 40px;
+        margin-top: 28px;
+        width: 228px;
+    }
+    .banner-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+    }
+    .banner-texts{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+    .watch-live{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .banner .messi img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav-and-blog{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    .navigators{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        background-color: white;
+        margin-right: 0;
+        margin-bottom: 24px;
+        padding: 0;
+    }
+    .nav{
+        border: 1px solid #161616;
+        font-size: 22px;
+        font-weight: 500;
+        width: 230px;
+        height: 64px;
+        text-align: center;
+    }
+    .nav-upcoming-match{
+        font-size: 20px;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+    }
+    .last-blog{
+        display: none;
+    }
+    .view-all{
+        display: block;
+        width: 187px;
+        height: 56px;
+        color: white;
+        background-color: red;
+        margin-top: 50px;
+        border-radius: 5px;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+    }
+    footer{
+        width: 100%;
+    }
+    .goal {
+        padding-top: 70px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+    .footer-items{
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 55px;
+    }
+    .items{
+        padding-top: 20px;
+        font-size: 16px;
+    }
 }
